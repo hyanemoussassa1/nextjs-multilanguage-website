@@ -14,7 +14,7 @@ const Teaser = ({ blok }) => {
           alt={blok.image.alt}
           className="w-full"
         />
-        <figcaption class="mt-2 text-md">{blok.caption}</figcaption>
+        <figcaption className="mt-2 text-md">{blok.caption}</figcaption>
         </figure>
       </div>
     </div>
