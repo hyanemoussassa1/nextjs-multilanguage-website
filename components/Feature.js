@@ -7,7 +7,7 @@ const Feature = ({ blok }) => {
     <div
       {...sbEditable(blok)}
       key={blok._uid}
-      className="py-16 max-w-sm p-2 sm:p-10 text-center flex flex-col items-center"
+      className="py-16 p-2 sm:p-10 text-center flex flex-col items-center"
     >
       <DynamicIcon type={blok.icon} />
       <div className="px-6 py-4">

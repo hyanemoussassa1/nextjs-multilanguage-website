@@ -5,10 +5,10 @@ const Grid = ({ blok }) => (
   <ul
     {...sbEditable(blok)}
     key={blok._uid}
-    className="flex py-8 mb-6 container mx-auto"
+    className="flex flex-col sm:flex-row sm:items-center sm:content-center"
   >
     {blok.columns.map((nestedBlok) => (
-      <li key={nestedBlok._uid} className="flex-auto px-6">
+      <li key={nestedBlok._uid} className="sm:content-center">
         <DynamicComponent blok={nestedBlok} />
       </li>
     ))}
