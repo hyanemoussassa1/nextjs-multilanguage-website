@@ -15,6 +15,7 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
   const resolveAbout = {
     en: "About us",
     es: "Acerca",
+    fr: "A propos de nous"
   };
 
   const [isOpened, setIsOpened] = useState(false);
@@ -67,17 +68,17 @@ const Navigation = ({ locale, locales, defaultLocale }) => {
           </div>
           <div className="w-full md:w-auto md:flex-grow md:flex md:items-center">
               <ul className={`flex md:inline-flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 md:ml-auto lg:mr-8 md:border-0
-                   ${isOpened ? "inline-block" : "hidden"}`}>
+                   ${isOpened ? "inline-block scale-100" : "hidden"}`}>
                 <li>
                   <Link href={`${defaultRoot}about`}>
-                    <a className="block px-4 py-1 md:p-2 lg:px-8">
+                    <a className="block px-4 py-1 md:p-2 lg:px-4">
                       {resolveAbout[locale]}
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href={`${defaultRoot}blog`}>
-                    <a className="block px-4 py-1 md:p-2 lg:px-8">Projects</a>
+                    <a className="block px-4 py-1 md:p-2 lg:px-4">Projects</a>
                   </Link>
                 </li>
                 {/* <li>

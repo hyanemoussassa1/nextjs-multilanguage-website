@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const Layout = ({ children, locale, locales, defaultLocale }) => (
-  <div className="bg-gray-300">
+  <div>
     <Head />
     <Navigation
       locale={locale}
